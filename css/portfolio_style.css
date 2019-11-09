@@ -9,6 +9,37 @@ body{
     margin: 0;
     padding: 0;
 }
+.nav{
+    padding: 20px 0; 
+    text-align: left; 
+    justify-self: left;
+    /* grid-column: 1 / 4; */
+    grid-row: 1 / span 1;
+    grid-column: 1 / -1;
+  }
+
+  nav ul{
+    list-style-type: none;
+  }
+  
+  nav li{
+    display: inline;
+    padding-right: 20px;
+    
+  }
+  
+  nav a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: optima;
+    display: flex; 
+    font-size: 14px;
+  }
+  
+  nav a:hover{
+    text-decoration: underline;
+  }
 .container{
     display: grid;
     grid-template-rows: 180px 1fr 1fr 1fr 1fr 80px ; 
@@ -28,16 +59,16 @@ body{
  }
   .ag_title{
     font-size: 30px;
-
     line-height: 1;
     padding: 30px 0;
     text-align: center;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    color: white; 
-    /* animation-duration: 2s;
-    animation-name: bounceIn; */
+    text-shadow: -2px 0 black,  0 2px black, 2px 0 black, 0 -2px black;
+    color: lightblue;
     align-content: bottom center;
+    animation-duration: 2s;
+    animation-name: bounceIn;
     grid-row: 1/ span -1; 
+    /* padding: 50px 0; */
   }
   @keyframes bounceIn {
     0% {
@@ -141,37 +172,7 @@ body{
       text-align: center;
   }
     
-  .nav{
-    padding: 20px 0; 
-    text-align: left; 
-    justify-self: left;
-    /* grid-column: 1 / 4; */
-    grid-row: 1 / span 1;
-    grid-column: 1 / -1;
-  }
 
-  nav ul{
-    list-style-type: none;
-  }
-  
-  nav li{
-    display: inline;
-    padding-right: 20px;
-    
-  }
-  
-  nav a{
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-    font-family: optima;
-    display: flex; 
-    font-size: 14px;
-  }
-  
-  nav a:hover{
-    text-decoration: underline;
-  }
   
   .skip a{
     background: white;
@@ -191,11 +192,10 @@ body{
   
   *:focus{
     border: 2px solid black;
-  /*Add the selector and code to put a 2px black border around all elements in focus.*/
   }
 
  
-  /* page 2: gallery */
+  /* page 2: activities */
 .gallery{
     display: grid;
     grid-template-columns: 1fr; 
@@ -225,8 +225,8 @@ header h1{
     line-height: 1;
     padding: 50px 0;
     text-align: center; 
-    text-shadow: -1px 0 white,  0 1px white, 1px 0 white, 0 -1px white;
-    color: black;
+    text-shadow: -2px 0 black,  0 2px black, 2px 0 black, 0 -2px black;
+    color: lightblue;
     animation-duration: 2s;
     animation-name: bounceIn;
     align-content: bottom center;
@@ -234,7 +234,7 @@ header h1{
 }
 
 .act_title {
-    font-style: normal; 
+    font-style: normal;
 }
 
 /* FAMILY PAGE  */
@@ -253,16 +253,48 @@ img{
  p{
     text-align: left;
 }
+.family{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.cousins{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.grandma{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
 
 /* Travels Page */
 .travels_container{
     display: grid; 
     grid-column: 1fr; 
 }
+p{
+    text-align: center;
+}
 .tahoe{
     margin-top: 50px;
     margin-bottom: 50px;
 }
+.chicago{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.tlv{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.lbi{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.croatia{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
 /* Contact Page  */
 .contact_container{
     display: grid;
@@ -377,7 +409,7 @@ button{
         font-weight: bold;
         text-decoration: none;
         font-family: Optima;
-        font-size: 12px;
+        font-size: 20px;
       }
       p{
         text-align: center;
@@ -406,6 +438,21 @@ button{
         grid-row: 3 / span 1;   
         grid-column: 1;
     }
+    .nav{
+        text-align: center; 
+        justify-self: center;
+      }
+    nav a{
+        font-size: 30px;
+    }
+
+      nav li{
+        display: inline-block;
+        padding-right: 20px;  
+      }
+      nav{
+        display: inline;
+      }
 
 }
 @media screen and (prefers-reduced-motion: reduce){
