@@ -62,7 +62,6 @@ body{
     line-height: 1;
     padding: 30px 0;
     text-align: center;
-    /* text-shadow: -1px 0,  0 1px , 1px 0, 0 -1px; */
     text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
     color: lightblue;
     align-content: bottom center;
@@ -262,6 +261,14 @@ img{
     margin-top: 50px;
     margin-bottom: 50px;
 }
+.uncle{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.aunt{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
 .grandma{
     margin-top: 50px;
     margin-bottom: 50px;
@@ -406,11 +413,19 @@ button{
     }  
 
      nav a{
-        color: white;  
-        font-weight: bold;
-        text-decoration: none;
-        font-family: Optima;
         font-size: 20px;
+      }
+    .nav{
+        text-align: center; 
+        justify-self: center;
+      }
+
+    nav li{
+        display: inline-block;
+        padding-right: 20px;  
+      }
+    nav{
+        display: inline;
       }
       p{
         text-align: center;
